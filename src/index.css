@@ -1,13 +1,311 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Baloo Da 2', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.home ul{
+  list-style-type:square;
+}
+.home ul li {
+  padding-top: 0;
+  margin-top: -20px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media only screen and  (max-width : 980px  ) 
+{
+  .all i{
+    display: none;}
+.links {
+  padding: 5px 3px;
+  font-size: larger;
+}
+.links a{
+  padding: 5px 6px 5px 6px;
+  color: blue;
+}
+.text{
+  width: 50%;}
+.img img{
+ height: 180px;
+  margin:50px auto 0 auto;}
+
+.home{
+font-size:x-large;
+    }
+
+.hobbies{   font-size: x-large;} 
+.achieve ul li , .year {
+  font-size: large;
+}
+.year{margin-right: 50px;}
+.hobbies ul li, .achieve ul li{
+  padding: 10px 10px;
+}
+.education{width: 80%;}
+#t01 tr:nth-child(even){
+    font-size: x-large;
+
+ }
+ #t01 tr:nth-child(odd){
+    font-size: x-large;
+ }
+ .all button{
+   display: none;
+ }
+}
+@media only screen and  (min-width : 980px ) {
+  .all i{
+    display: none;}
+  .links{
+    padding: 5px 10px;
+    font-size: x-large;
+  }
+  .links a{
+    padding: 5px 20px 5px 30px;
+  }
+  .text{
+    width: 50%;}
+    .img img{
+      margin-top: 50px;}
+      .home{
+        font-size:x-large;
+      }
+  .img img{
+    height: 220px;
+    margin:50px auto 0 auto;
+  }   
+  .hobbies{    font-size: x-large;} 
+  .achieve ul li,.year {
+    text-align: left;
+    font-size: x-large;
+  } 
+  .year{
+    margin-right: 100px;
+  }
+  .hobbies ul li, .achieve ul li{
+    padding: 10px 20px;
+  }
+  .education{
+    width: 80%;
+  }
+  #t01 tr:nth-child(even){
+      font-size: large;
+   }
+   #t01 tr:nth-child(odd){
+      font-size: large;
+   }
+   .all button{
+    display: none;
+  }
+  }
+@media only screen and  (max-width : 419px ){
+  .links {
+    padding: 5px 0px;
+    font-size: medium;
+    flex-wrap: wrap;
+    flex-direction:column;
+  }
+  #inks{display: none;}
+  .links a{
+   padding: 5px 1px;
+  
+  }
+  .text{
+    width: 100%;
+  }
+  .img img{
+    width: inherit;
+    margin:auto;
+  text-align: center;}
+    .home{
+      font-size:medium;
+    }
+  .img img{
+    text-align: center;
+    width: 180px;
+    margin:20px auto 0 80px;
+  }  
+  .hobbies{
+    font-size: medium;
+  }
+  .achieve ul li,.year{
+    font-size: medium;
+  } 
+  .year{
+    margin-right: 5px;
+  }
+  .hobbies ul li, .achieve ul li{
+    padding: 10px 0px;
+  }
+  .education{
+    width:auto
+  }
+  #t01 tr:nth-child(even){
+      font-size: 13px;
+   }
+   #t01 tr:nth-child(odd){
+      font-size:13px;
+   }
+   .all i{
+    display: contents;
+    font-size:20px;
+     float: left;  
+     text-align: left;
+  }
+}
+
+
+.names{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(179, 179, 171);
+}
+.img img{
+  margin-left: 40px;
+  float: left;
+}
+.text {
+  text-align: center;
+  text-decoration: underline;
+
+  margin: auto;
+  font-size:large ;
+}
+.links {
+  background-color: rgb(121, 108, 108);
+  display: flex;
+  align-items: center; 
+  height: fit-content;
+}
+
+.links a{ 
+  font-weight: bold;
+  color: black;
+  border-width:  4px;
+   border-style:  solid;
+   border-color: transparent;
+  text-decoration: none;
+  background-color: rgb(121, 108, 108);
+  margin:  0 4px;
+}
+.links a:hover{
+  background-color: white;
+  border-radius: 10px;
+}
+
+.links a:focus{
+  background-color: white;
+  border-radius: 10px;
+}
+.home{
+  text-align: left;
+  padding-left: 4px;
+
+  font-weight: 600;
+}
+.home li a{
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgb(39, 77, 194);
+}
+.home li a:hover{
+  text-decoration: underline;
+}
+.home li{
+  padding: 10px 15px;
+}
+.hobbies{
+  display: flex;
+    text-align: initial;
+
+    padding-left: 5px;
+}
+
+.achieve ul li {
+  text-align: left;
+}
+.education{
+  margin: auto;
+}
+table{
+position: relative;
+top: 50px;
+}
+table,th,td {
+  border: 2px solid black;
+  border-collapse: collapse;
+
+}
+#t01 tr:nth-child(even){
+ background-color: #eee;
+  text-align: left;
+  height:  55px;
+}
+#t01 tr:nth-child(odd){
+ background-color: #fff;
+  text-align: left;
+  height: 55px;
+}
+.year {
+
+  margin-left: auto; 
+
+}
+.box{
+  display: flex;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+ p .fa{
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.img p{
+  font-size: 15px;;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: bold;
+  text-align: left;
+}
+.fa:hover {
+  opacity: 0.7;
 }
